@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.repository.DemoRepository">
+
+    <select id="findAll" resultType="com.example.demo.dto.TbMember">
+        select
+            PDNo          as pdno
+            , HP          as hp
+            , NAME        as name
+            , address     as address
+            , adress_name as addressName
+            , PASSWORD    as password
+            , Use_status  as useStatus
+        from TB_Member
+    </select>
+    
+</mapper>
+
+
+
